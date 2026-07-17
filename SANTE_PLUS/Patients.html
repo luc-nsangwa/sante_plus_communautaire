@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Patients - Santé+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Barre latérale -->
+<div class="sidebar">
+
+    <h2>🏥 Santé+</h2>
+
+    <a href="accueil.html">🏠 Accueil</a>
+    <a href="patients.html">👤 Patients</a>
+    <a href="rendezvous.html">📅 Rendez-vous</a>
+    <a href="dossiers.html">📁 Dossiers médicaux</a>
+    <a href="connexion.html">🚪 Déconnexion</a>
+
+</div>
+
+<!-- Contenu -->
+<div class="content">
+
+    <h1>Gestion des Patients</h1>
+
+    <form id="patientForm">
+
+        <input type="text" id="nom" placeholder="Nom" required>
+
+        <input type="text" id="postnom" placeholder="Postnom" required>
+
+        <input type="text" id="prenom" placeholder="Prénom" required>
+
+        <select id="sexe" required>
+            <option value="">-- Sexe --</option>
+            <option>Masculin</option>
+            <option>Féminin</option>
+        </select>
+
+        <input type="number" id="age" placeholder="Âge" required>
+
+        <input type="text" id="telephone" placeholder="Téléphone" required>
+
+        <input type="text" id="adresse" placeholder="Adresse" required>
+
+        <button type="submit">
+            Enregistrer le patient
+        </button>
+
+    </form>
+
+    <h2>Liste des patients</h2>
+
+    <table>
+
+        <thead>
+
+        <tr>
+
+            <th>N°</th>
+            <th>Nom</th>
+            <th>Postnom</th>
+            <th>Prénom</th>
+            <th>Sexe</th>
+            <th>Âge</th>
+            <th>Téléphone</th>
+            <th>Adresse</th>
+            <th>Actions</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody id="listePatients">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dossiers médicaux - Santé+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- MENU LATERAL -->
+
+<div class="sidebar">
+
+
+<h2>🏥 Santé+</h2>
+
+
+<a href="accueil.html">🏠 Accueil</a>
+
+<a href="patients.html">👤 Patients</a>
+
+<a href="rendezvous.html">📅 Rendez-vous</a>
+
+<a href="dossiers.html">📁 Dossiers médicaux</a>
+
+<a href="connexion.html">🚪 Déconnexion</a>
+
+
+</div>
+
+
+
+<!-- CONTENU -->
+
+<div class="content">
+
+
+<h1>Gestion des dossiers médicaux</h1>
+
+
+
+<form id="dossierForm">
+
+
+<input 
+type="text"
+id="patientDossier"
+placeholder="Nom du patient"
+required>
+
+
+
+<input 
+type="text"
+id="groupeSanguin"
+placeholder="Groupe sanguin (ex: A+, O-)"
+required>
+
+
+
+
+<textarea
+id="antecedents"
+placeholder="Antécédents médicaux">
+</textarea>
+
+
+
+
+<textarea
+id="diagnostic"
+placeholder="Diagnostic">
+</textarea>
+
+
+
+
+<textarea
+id="traitement"
+placeholder="Traitement prescrit">
+</textarea>
+
+
+
+
+<textarea
+id="observation"
+placeholder="Observations du médecin">
+</textarea>
+
+
+
+
+<button type="submit">
+
+Enregistrer le dossier
+
+</button>
+
+
+</form>
+
+
+
+
+
+<h2>Liste des dossiers médicaux</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>N°</th>
+
+<th>Patient</th>
+
+<th>Groupe sanguin</th>
+
+<th>Diagnostic</th>
+
+<th>Traitement</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="listeDossiers">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

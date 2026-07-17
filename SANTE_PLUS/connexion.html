@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Clinique Santé+</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f4f6f9;
+        }
+
+        .login{
+            width:400px;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.2);
+            text-align:center;
+        }
+
+        .login h1{
+            color:#0B5394;
+            margin-bottom:10px;
+        }
+
+        .login p{
+            color:gray;
+            margin-bottom:20px;
+        }
+
+        #message{
+            margin-top:15px;
+            font-weight:bold;
+            color:red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="login">
+
+    <h1>🏥 Santé+</h1>
+
+    <p>Gestion simplifiée d'une clinique médicale</p>
+
+    <form id="loginForm">
+
+        <input
+            type="text"
+            id="utilisateur"
+            placeholder="Nom d'utilisateur"
+            required>
+
+        <input
+            type="password"
+            id="motdepasse"
+            placeholder="Mot de passe"
+            required>
+
+        <button type="submit">
+            Se connecter
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm")
+.addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    let utilisateur=document.getElementById("utilisateur").value;
+
+    let motdepasse=document.getElementById("motdepasse").value;
+
+    if(utilisateur==="admin" && motdepasse==="1234"){
+
+        window.location.href="accueil.html";
+
+    }
+
+    else{
+
+        document.getElementById("message").innerHTML=
+        "Nom d'utilisateur ou mot de passe incorrect.";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

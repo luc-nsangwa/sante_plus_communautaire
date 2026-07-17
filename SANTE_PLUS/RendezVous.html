@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rendez-vous - Santé+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- MENU LATERAL -->
+
+<div class="sidebar">
+
+<h2>🏥 Santé+</h2>
+
+<a href="accueil.html">🏠 Accueil</a>
+
+<a href="patients.html">👤 Patients</a>
+
+<a href="rendezvous.html">📅 Rendez-vous</a>
+
+<a href="dossiers.html">📁 Dossiers médicaux</a>
+
+<a href="connexion.html">🚪 Déconnexion</a>
+
+</div>
+
+
+
+<!-- CONTENU -->
+
+<div class="content">
+
+
+<h1>Gestion des rendez-vous</h1>
+
+
+
+<form id="rdvForm">
+
+
+<input 
+type="text" 
+id="patientRdv" 
+placeholder="Nom du patient"
+required>
+
+
+
+<input 
+type="date" 
+id="dateRdv"
+required>
+
+
+
+<input 
+type="time" 
+id="heureRdv"
+required>
+
+
+
+<select id="serviceRdv">
+
+
+<option value="">
+-- Choisir un service --
+</option>
+
+
+<option>
+Consultation générale
+</option>
+
+
+<option>
+Pédiatrie
+</option>
+
+
+<option>
+Laboratoire
+</option>
+
+
+<option>
+Dentisterie
+</option>
+
+
+</select>
+
+
+
+<button type="submit">
+
+Enregistrer le rendez-vous
+
+</button>
+
+
+</form>
+
+
+
+
+<h2>Liste des rendez-vous</h2>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>N°</th>
+
+<th>Patient</th>
+
+<th>Date</th>
+
+<th>Heure</th>
+
+<th>Service</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="listeRdv">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
